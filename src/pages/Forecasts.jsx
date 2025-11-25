@@ -1,4 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
+import ForecastVisualizations from "../components/ForecastVisualizations";
 import {
   ResponsiveContainer,
   LineChart,
@@ -300,6 +301,7 @@ export default function Forecasts() {
             </ul>
           </div>
         </div>
+        <ForecastVisualizations />{/*milestone3 visualizations*/}
       </div>
     </div>
   );
