@@ -25,6 +25,8 @@ import Forecasts from "./pages/Forecasts";
 import Reports from "./pages/Reports";
 import Insights from "./pages/Insights";
 import IntroPage from "./pages/IntroPage";
+import ModelDashboard from "./pages/ModelDashboard";
+
 
 // KPI Card Component and Chart components (HARMONIZED)
 function KPICard({ title, value, delta, subtitle, icon }) {
@@ -317,6 +319,8 @@ export default function App() {
             </div>
           </>
         );
+        case "Model Dashboard":
+           return <ModelDashboard />;
       case "Usage Trends":
         return <UsageTrends />;
       case "Forecasts":

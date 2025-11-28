@@ -21,6 +21,7 @@ export default function Sidebar({ onSelect }) {
   // Color mapping for icons and labels for each menu item (light/dark mode)
   const iconColorMap = {
     Dashboard: "text-[#225577] dark:text-orange-300",
+    "Model Dashboard": "text-blue-500 dark:text-blue-300",
     "Usage Trends": "text-orange-500 dark:text-orange-300",
     Forecasts: "text-fuchsia-700 dark:text-fuchsia-400",
     Reports: "text-green-700 dark:text-green-400",
@@ -29,6 +30,7 @@ export default function Sidebar({ onSelect }) {
 
   const bgActiveColorMap = {
     Dashboard: "from-[#b7d2f7] to-[#225577]",
+    "Model Dashboard": "from-blue-300 to-blue-700",
     "Usage Trends": "from-orange-300 to-orange-500",
     Forecasts: "from-fuchsia-400 to-fuchsia-700",
     Reports: "from-green-300 to-green-700",
@@ -37,6 +39,7 @@ export default function Sidebar({ onSelect }) {
 
   const menuItems = [
     { name: "Dashboard", icon: FileText },
+    {name:"ModelDashboard",icon:BarChart3},
     { name: "Usage Trends", icon: BarChart3 },
     { name: "Forecasts", icon: Activity },
     { name: "Reports", icon: ClipboardCheck },
